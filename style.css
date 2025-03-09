@@ -150,6 +150,8 @@ h2{
 }
 p{
     font-size: 110%;
+    font-family: Raleway;
+    hyphens: auto;
 }
 strong{
     color: #cc5500;
@@ -201,6 +203,7 @@ a:hover{
 }
 .timelineContentTitle{
     margin: 0px;
+    text-align: center;
 }
 .timelineContentDate{
     margin-bottom: 0px;
@@ -234,7 +237,8 @@ footer a{
 
 
 
-@media screen and (max-width: 1000px){
+
+@media screen and (max-width: 1050px){
     /* Définition de la position global */
     main{
         display: block;
@@ -251,12 +255,15 @@ footer a{
         font-size: 700%;
         border: solid #ff6600 10px;
         border-radius: 30px;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     #navTab ul li{
-        font-size:200%;
+        font-size:150%;
         padding-top: 20px;
         padding-bottom:20px;
-        border-bottom: solid #ff6600 5px;
+        border-bottom: solid #ff6600 6px;
     }
     #navBlock{
         height: auto;
@@ -271,10 +278,12 @@ footer a{
     /* Définition du  contenue */
     /* global */
     p{
-        font-size: 200%;
+        font-size: 175%;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     a{
-        font-size: 200%;
+        font-size: 300%;
     }
     .sectionTitle{
         font-size: 450%;
@@ -285,16 +294,22 @@ footer a{
         width: auto;
         border: solid #ff6600 7px;
         border-radius: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     #Photo{
         border: solid black 8px;
         width: 80%;
         height: 80%;
     }
+    #aPropos > a{
+        text-align: center;
+    }
 
     /* timeline */
     .timelineContentDate{
-        font-size: 200%;
+        font-size: 275%;
+        padding-bottom: 10px;
     }
     .timelineContent{
         width: auto;
@@ -302,7 +317,7 @@ footer a{
         border-radius: 25px;
     }
     .timelineContentTitle{
-        font-size: 275%;
+        font-size: 325%;
     }
 
     /* grille */
@@ -316,15 +331,17 @@ footer a{
         max-width: none;
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 50px;
     }
     .gridTitle{
-        font-size: 275%;
+        font-size: 325%;
         text-align: center;
         margin: 0;
 
     }
     .gridContent > h3{
-        font-size: 200%;
+        font-size: 225%;
+        text-align: center;
     }
 
     /* footer */
@@ -335,6 +352,8 @@ footer a{
         width: 100%;
         box-sizing: border-box;
         text-align: center;
+        padding: 25px;
+        font-size: 300%;
     }
     footer a:first-child{
         position: relative;
