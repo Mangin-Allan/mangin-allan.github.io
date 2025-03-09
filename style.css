@@ -242,13 +242,21 @@ footer a{
     content{
         display: block;
         box-sizing: border-box;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     /* Définiton de la nav */
+    #title{
+        font-size: 700%;
+        border: solid #ff6600 10px;
+        border-radius: 30px;
+    }
     #navTab ul li{
-        font-size:150%;
+        font-size:200%;
+        padding-top: 20px;
+        padding-bottom:20px;
+        border-bottom: solid #ff6600 5px;
     }
     #navBlock{
         height: auto;
@@ -261,28 +269,72 @@ footer a{
 
 
     /* Définition du  contenue */
-    #title{
-        font-size: 250%;
+    /* global */
+    p{
+        font-size: 200%;
     }
+    a{
+        font-size: 200%;
+    }
+    .sectionTitle{
+        font-size: 450%;
+    }
+
+    /* a propos */
     #aProposText{
         width: auto;
+        border: solid #ff6600 7px;
+        border-radius: 25px;
+    }
+    #Photo{
+        border: solid black 8px;
+        width: 80%;
+        height: 80%;
+    }
+
+    /* timeline */
+    .timelineContentDate{
+        font-size: 200%;
     }
     .timelineContent{
         width: auto;
+        border: solid #ff6600 7px;
+        border-radius: 25px;
+    }
+    .timelineContentTitle{
+        font-size: 275%;
+    }
+
+    /* grille */
+    .grid > div{
+        display: inline-block;
     }
     .gridContent{
+        padding: 10px;
+        border: solid #ff6600 7px;
+        border-radius: 25px;
+        max-width: none;
         margin-left: 0;
         margin-right: 0;
     }
-}
+    .gridTitle{
+        font-size: 275%;
+        text-align: center;
+        margin: 0;
 
-@media screen and (max-width: 550px){
+    }
+    .gridContent > h3{
+        font-size: 200%;
+    }
+
+    /* footer */
     footer{
         padding: 10px;
     }
     footer a{
         width: 100%;
         box-sizing: border-box;
+        text-align: center;
     }
     footer a:first-child{
         position: relative;
