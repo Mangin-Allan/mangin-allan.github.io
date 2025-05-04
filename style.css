@@ -42,6 +42,7 @@ nav{
     flex: 0 0 auto;
 }
 content{
+    width: 100%;
     box-sizing: border-box;
     padding: 20px;
 }
@@ -116,7 +117,7 @@ nav{
 #navTab ul li{
     border-bottom: solid #ff6600 2px;
     text-align: center;
-    font-size:125%;
+    font-size:150%;
     padding: 5px;
 
     font-family: Montserrat;
@@ -127,6 +128,8 @@ nav{
 #navTab ul li a{
     color: black;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #navTab ul li:hover{
     background-color:#353535;
@@ -134,7 +137,12 @@ nav{
 #navTab ul li:hover > a{
     color: lightgray;
 }
-
+.currTab{
+    background-color:#353535;
+}
+.currTab > a{
+    color: lightgray !important;
+}
 
 
 
@@ -144,6 +152,7 @@ nav{
     color:lightgray;
     padding: 10px;
     font-family: Raleway;
+    margin-top: 0; /* one page : default, multipage : 0 */
 }
 h2{
     font-family: Poppins;
@@ -152,6 +161,7 @@ p{
     font-size: 110%;
     font-family: Raleway;
     hyphens: auto;
+    text-align: justify;
 }
 strong{
     color: #cc5500;
@@ -234,6 +244,33 @@ footer a{
     border-radius: 10px;
 }
 
+/* Style dr form */
+form{
+    width: 100%;
+}
+form label{
+    margin-top: 5px;
+}
+form input{
+    width: 100%;
+    border: solid #ff6600 2px;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+form textarea{
+    width: 100%;
+    resize: vertical;
+    border: solid #ff6600 2px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+form .button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    min-width: 50%;
+}
 
 
 
@@ -313,6 +350,7 @@ footer a{
     }
     .timelineContent{
         width: auto;
+        min-width: 95%;
         border: solid #ff6600 7px;
         border-radius: 25px;
     }
@@ -339,9 +377,38 @@ footer a{
         margin: 0;
 
     }
+    .gridTitle a{
+        font-size: 100%;
+    }
     .gridContent > h3{
         font-size: 225%;
         text-align: center;
+    }
+
+    /* form */
+    form label{
+        font-size: 200%;
+        margin-top: 5px;
+    }
+    form input{
+        width: 90%;
+        border: solid #ff6600 4px;
+        border-radius: 20px;
+        padding: 8px;
+        margin-bottom: 10px;
+        font-size: 175%;
+    }
+    form textarea{
+        width: 90%;
+        border: solid #ff6600 4px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    form .button{
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        min-width: 50%;
     }
 
     /* footer */
