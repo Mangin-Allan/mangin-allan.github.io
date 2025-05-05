@@ -166,6 +166,10 @@ p{
 strong{
     color: #cc5500;
 }
+strong.subTitle{
+    font-size: 112%;
+    color: black;
+}
 a:link{
     color: #cc5500;
 }
