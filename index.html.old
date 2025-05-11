@@ -21,9 +21,9 @@
                             <li><a href="#aPropos">A propos</a></li>
                             <li><a href="#formations">Formations</a></li>
                             <li><a href="#competences">Compétences</a></li>
-                            <li><a href="#qualitées">Qualitées</a></li>
+                            <li><a href="#qualités">Qualités</a></li>
                             <li><a href="#projets">Projets</a></li>
-                            <li><a href="#projets">CV et Contacte</a></li>
+                            <li><a href="#projets">CV et Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -116,8 +116,8 @@
                     </div>    
                 </div>
 
-                <div id="qualitées" class="grid">
-                    <h1 class="sectionTitle">Qualitées</h1>
+                <div id="qualités" class="grid">
+                    <h1 class="sectionTitle">Qualités</h1>
                     <div>
                         <div class="gridContent">
                             <h2 class="gridTitle">Persévérance</h2>

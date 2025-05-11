@@ -49,6 +49,20 @@ content{
 footer{
     padding: 20px;
 }
+.paragraphImageRight{
+    height: 200px;
+    padding-left: 20px;
+}
+.paragraphImageLeft{
+    height: 200px;
+    padding-right: 20px;
+}
+.textWithImage{
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
 
 /*style des block*/
 main{
@@ -191,17 +205,15 @@ a:hover{
     width: 300px;
     height: 300px;
 }
-#aProposText{
-    width: 60%;
+#aPropos .textWithImage{
+    width: 70%;
     border: solid #ff6600 4px;
-    padding: 20px;
-    border-radius: 10px;
 }
 
 
 
 /* Style des timelines*/
-.timeline div{
+.timeline > div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,7 +223,7 @@ a:hover{
     padding: 10px;
     margin-bottom: 50px;
 
-    width: 60%;
+    width: 70%;
     border: solid #ff6600 4px;
     border-radius: 10px;
 }
@@ -277,7 +289,15 @@ form .button{
 }
 
 
-
+/* Style des images */
+#GestionaireDeStage{
+    height: 350px;
+}
+#IPad{
+    height: 350px;
+    margin-left: 0;
+    margin-right: -20px;
+}
 
 @media screen and (max-width: 1050px){
     /* Définition de la position global */
@@ -329,15 +349,25 @@ form .button{
     .sectionTitle{
         font-size: 450%;
     }
-
-    /* a propos */
-    #aProposText{
+    .paragraphImageRight{
+        float: right;
+        height: 225px;
+    }
+    .paragraphImageLeft{
+        float: left;
+        height: 225px;
+        padding-right: 40px;
+    }
+    .textWithImage{
         width: auto;
         border: solid #ff6600 7px;
         border-radius: 25px;
         padding-left: 25px;
         padding-right: 25px;
+        display: block;
     }
+
+    /* a propos */
     #Photo{
         border: solid black 8px;
         width: 80%;
