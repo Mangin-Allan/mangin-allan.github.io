@@ -18,7 +18,13 @@
     font-weight:normal;
 }
 
-/* Definition de la position global*/
+/* 
+ * ----------------------------------------------------------------
+ * Définition global
+ * ----------------------------------------------------------------
+ */
+
+/*Definition de la position*/
 body{
     display:flex;
     flex-direction: column;
@@ -49,20 +55,6 @@ content{
 footer{
     padding: 20px;
 }
-.paragraphImageRight{
-    height: 200px;
-    padding-left: 20px;
-}
-.paragraphImageLeft{
-    height: 200px;
-    padding-right: 20px;
-}
-.textWithImage{
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-}
 
 /*style des block*/
 main{
@@ -74,20 +66,77 @@ nav{
     box-shadow: 3px 0px 3px 0px darkgray;
 }
 
+/* 
+ * ----------------------------------------------------------------
+ * Définition des parties en commun
+ * ----------------------------------------------------------------
+ */
+
+/*Definition de la position*/
+.textWithImage{
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.VeritcalImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionTitle{
+    padding: 10px;
+    margin-top: 0; /* one page : default, multipage : 0 */
+}
+
+/*Définition de l'apparance*/
+.sectionTitle{
+    background-color: #353535;
+    color:lightgray;
+    font-family: Raleway;
+}
+h2{
+    font-family: Poppins;
+}
+p{
+    font-size: 110%;
+    font-family: Raleway;
+    hyphens: auto;
+    text-align: justify;
+}
+strong{
+    color: #cc5500;
+}
+strong.subTitle{
+    font-size: 112%;
+    color: black;
+}
+a:link{
+    color: #cc5500;
+}
+a:hover{
+    color: #ff9900;
+}
 
 
-/* Definition des position de la nav*/
+
+/* 
+ * ----------------------------------------------------------------
+ * Définition de la bare de navigation
+ * ----------------------------------------------------------------
+ */
+
+/* Definition des positions*/
 #navBlock{
     height: 60vh;
 
     position: sticky;
     top:0px;
 
-
     display: flex;
     flex-direction: column;
     align-items:center;
-    
 }
 
 #title{
@@ -95,10 +144,8 @@ nav{
 }
 #navTab{
     flex-grow: 1;
-
     display: flex;
     align-items: center;
-    
 
     padding: 0;
     margin: 10px 0;
@@ -111,9 +158,7 @@ nav{
 }
 
 
-
-
-/* Style de la nav */
+/* Définition de l'apparance */
 #navBlock{
     padding: 15px;
 }
@@ -160,45 +205,23 @@ nav{
 
 
 
-/*Style commun du contenue*/
-.sectionTitle{
-    background-color: #353535;
-    color:lightgray;
-    padding: 10px;
-    font-family: Raleway;
-    margin-top: 0; /* one page : default, multipage : 0 */
-}
-h2{
-    font-family: Poppins;
-}
-p{
-    font-size: 110%;
-    font-family: Raleway;
-    hyphens: auto;
-    text-align: justify;
-}
-strong{
-    color: #cc5500;
-}
-strong.subTitle{
-    font-size: 112%;
-    color: black;
-}
-a:link{
-    color: #cc5500;
-}
-a:hover{
-    color: #ff9900;
-}
 
 
 
-/* Style de a propos*/
+/* 
+ * ----------------------------------------------------------------
+ * Définition de a propos
+ * ----------------------------------------------------------------
+ */
+
+/*Définition de la position*/
 #aPropos{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/*Définition de l'aparance*/
 #Photo{
     border-radius: 50%;
     border: solid black 2px;
@@ -211,21 +234,21 @@ a:hover{
 }
 
 
+/* 
+ * ----------------------------------------------------------------
+ * Définition de timeline
+ * ----------------------------------------------------------------
+ */
 
-/* Style des timelines*/
+/*Définition de la position*/
 .timeline > div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 .timelineContent{
     padding: 10px;
     margin-bottom: 50px;
-
-    width: 70%;
-    border: solid #ff6600 4px;
-    border-radius: 10px;
 }
 .timelineContentTitle{
     margin: 0px;
@@ -235,9 +258,21 @@ a:hover{
     margin-bottom: 0px;
 }
 
+/*Définition de l'aparance*/
+.timelineContent{
+    width: 70%;
+    border: solid #ff6600 4px;
+    border-radius: 10px;
+}
 
-/* Style des grille*/
 
+/* 
+ * ----------------------------------------------------------------
+ * Définition de grille
+ * ----------------------------------------------------------------
+ */
+
+/*Définition de la position*/
 .grid > div{
     display: flex;
     flex-direction: row;
@@ -245,22 +280,24 @@ a:hover{
     justify-content: center;
 }
 .gridContent{
-    padding: 10px;
-    border: solid #ff6600 4px;
-    border-radius: 10px;
     margin: 10px;
     max-width: 400px;
 }
 
-/* Style du footer */
-footer a{
-    display: inline-block;
+/*Définition de l'aparance*/
+.gridContent{
     padding: 10px;
     border: solid #ff6600 4px;
     border-radius: 10px;
 }
 
-/* Style dr form */
+/* 
+ * ----------------------------------------------------------------
+ * Définition du form
+ * ----------------------------------------------------------------
+ */
+
+/*Définition de la position*/
 form{
     width: 100%;
 }
@@ -269,15 +306,12 @@ form label{
 }
 form input{
     width: 100%;
-    border: solid #ff6600 2px;
-    border-radius: 10px;
     padding: 4px;
     margin-bottom: 5px;
 }
 form textarea{
     width: 100%;
     resize: vertical;
-    border: solid #ff6600 2px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -288,19 +322,81 @@ form .button{
     min-width: 50%;
 }
 
+/*Définition de l'aparance*/
+form input{
+    border: solid #ff6600 2px;
+    border-radius: 10px;
+}
+form textarea{
+    border: solid #ff6600 2px;
+}
 
-/* Style des images */
+
+
+/* 
+ * ----------------------------------------------------------------
+ * Définition des images
+ * ----------------------------------------------------------------
+ */
+
+/* a propos */
+#LogoDOTNET{
+    height: auto;
+    width: 75px;
+}
+#LogoIUT{
+    height: auto;
+    width: 150px;
+}
+#LogoLinux{
+    height: auto;
+    width: 125px;
+}
+
+/* projets */
 #GestionaireDeStage{
     height: 350px;
+    margin-left: 20px;
 }
 #IPad{
     height: 350px;
     margin-left: 0;
     margin-right: -20px;
 }
+#forge{
+    height: 350px;
+    margin-left: 50px;
+}
 
+
+
+/* 
+ * ----------------------------------------------------------------
+ * Définition du footer
+ * ----------------------------------------------------------------
+ */
+footer a{
+    display: inline-block;
+    padding: 10px;
+    border: solid #ff6600 4px;
+    border-radius: 10px;
+}
+
+
+
+/* 
+ * ----------------------------------------------------------------
+ * Définition pour mobile
+ * ----------------------------------------------------------------
+ */
 @media screen and (max-width: 1050px){
-    /* Définition de la position global */
+    /* 
+    * ----------------------------------------------------------------
+    * Définition global
+    * ----------------------------------------------------------------
+    */
+
+    /*Definition de la position*/
     main{
         display: block;
     }
@@ -311,80 +407,120 @@ form .button{
         padding-right: 50px;
     }
 
-    /* Définiton de la nav */
+    /* 
+    * ----------------------------------------------------------------
+    * Définition des parties en commun
+    * ----------------------------------------------------------------
+    */
+    
+    /*Definition de la position*/
+    p{
+        font-size: 225%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    a{
+        font-size: 100%;
+    }
+    .sectionTitle{
+        font-size: 450%;
+    }
+    .textWithImage{
+        width: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        flex-direction: column;
+    }
+    .VeritcalImages{
+        flex-direction: row;
+    }
+
+
+    /* 
+    * ----------------------------------------------------------------
+    * Définition de la bare de navigation
+    * ----------------------------------------------------------------
+    */
+
+    /* Definition des positions*/
     #title{
-        font-size: 700%;
-        border: solid #ff6600 10px;
-        border-radius: 30px;
         padding: 10px;
         padding-left: 30px;
         padding-right: 30px;
     }
     #navTab ul li{
-        font-size:150%;
         padding-top: 20px;
         padding-bottom:20px;
-        border-bottom: solid #ff6600 6px;
     }
     #navBlock{
         height: auto;
+    }
+    
+    /* Définition de l'apparance */
+    #title{
+        font-size: 700%;
+        border: solid #ff6600 10px;
+        border-radius: 30px;
+    }
+    #navTab ul li{
+        font-size:400%;
+        border-bottom: solid #ff6600 6px;
     }
     nav{
         border-right: none;
         border-bottom: solid black 2px;
         box-shadow: 0px 5px 5px 0px darkgray;
     }
+    
 
+    /* 
+    * ----------------------------------------------------------------
+    * Définition de a propos
+    * ----------------------------------------------------------------
+    */
 
-    /* Définition du  contenue */
-    /* global */
-    p{
-        font-size: 175%;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-    a{
-        font-size: 300%;
-    }
-    .sectionTitle{
-        font-size: 450%;
-    }
-    .paragraphImageRight{
-        float: right;
-        height: 225px;
-    }
-    .paragraphImageLeft{
-        float: left;
-        height: 225px;
-        padding-right: 40px;
-    }
-    .textWithImage{
-        width: auto;
-        border: solid #ff6600 7px;
-        border-radius: 25px;
-        padding-left: 25px;
-        padding-right: 25px;
-        display: block;
-    }
-
-    /* a propos */
+    /*Définition de la position*/
     #Photo{
-        border: solid black 8px;
         width: 80%;
         height: 80%;
     }
-    #aPropos > a{
-        text-align: center;
+  
+
+    /*Définition de l'aparance*/
+    #Photo{
+        border: solid black 8px;
+    }
+    #aPropos .textWithImage{
+        width: 95%;
+        border: solid #ff6600 7px;
+        border-radius: 25px;
     }
 
-    /* timeline */
+    
+    /* 
+    * ----------------------------------------------------------------
+    * Définition de timeline
+    * ----------------------------------------------------------------
+    */
+
+    /*Définition de la position*/
     .timelineContentDate{
-        font-size: 275%;
         padding-bottom: 10px;
     }
     .timelineContent{
         width: auto;
         min-width: 95%;
+    }
+    .timelineImage{
+        height: auto;
+        width: 90%;
+    }
+
+    /*Définition de l'aparance*/
+    .timelineContentDate{
+        font-size: 275%;
+    }
+    .timelineContent{
         border: solid #ff6600 7px;
         border-radius: 25px;
     }
@@ -392,24 +528,35 @@ form .button{
         font-size: 325%;
     }
 
-    /* grille */
+    /* 
+    * ----------------------------------------------------------------
+    * Définition de grille
+    * ----------------------------------------------------------------
+    */
+
+    /*Définition de la position*/
     .grid > div{
         display: inline-block;
     }
     .gridContent{
         padding: 10px;
-        border: solid #ff6600 7px;
-        border-radius: 25px;
         max-width: none;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 50px;
     }
     .gridTitle{
-        font-size: 325%;
-        text-align: center;
         margin: 0;
-
+    }
+    
+    /*Définition de l'aparance*/
+    .gridContent{
+        border: solid #ff6600 7px;
+        border-radius: 25px;
+    }
+    .gridTitle{
+        text-align: center;
+        font-size: 325%;
     }
     .gridTitle a{
         font-size: 100%;
@@ -419,23 +566,24 @@ form .button{
         text-align: center;
     }
 
-    /* form */
+    /* 
+    * ----------------------------------------------------------------
+    * Définition du form
+    * ----------------------------------------------------------------
+    */
+
+    /*Définition de la position*/
     form label{
         font-size: 200%;
         margin-top: 5px;
     }
     form input{
         width: 90%;
-        border: solid #ff6600 4px;
-        border-radius: 20px;
         padding: 8px;
         margin-bottom: 10px;
-        font-size: 175%;
     }
     form textarea{
         width: 90%;
-        border: solid #ff6600 4px;
-        border-radius: 20px;
         margin-bottom: 20px;
     }
     form .button{
@@ -445,7 +593,60 @@ form .button{
         min-width: 50%;
     }
 
-    /* footer */
+    /*Définition de l'aparance*/
+    form input{
+        border: solid #ff6600 4px;
+        border-radius: 20px;
+    }
+    form textarea{
+        font-size: 175%;
+        border: solid #ff6600 4px;
+        border-radius: 20px;
+    }
+
+
+
+    /* 
+    * ----------------------------------------------------------------
+    * Définition des images
+    * ----------------------------------------------------------------
+    */
+
+    /* a propos */
+    #LogoDOTNET{
+        height: auto;
+        width: 150px;
+    }
+    #LogoIUT{
+        height: auto;
+        width: 300px;
+    }
+    #LogoLinux{
+        height: auto;
+        width: 250px;
+    }
+
+    /* projets */
+    #GestionaireDeStage{
+        height: auto;
+        margin: 0;
+    }
+    #IPad{
+        height: auto;
+        margin: 0;
+    }
+    #forge{
+        height: auto;
+        margin: 0; 
+    }
+
+
+
+    /* 
+    * ----------------------------------------------------------------
+    * Définition du footer
+    * ----------------------------------------------------------------
+    */
     footer{
         padding: 10px;
     }
@@ -461,3 +662,4 @@ form .button{
         top: 4px;
     }
 }
+/* Comme j'était bien obliger de rajouter quelque chose qu'il ne faut pas : ニジガク大好き です!*/
